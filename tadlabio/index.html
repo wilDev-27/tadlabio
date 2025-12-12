@@ -1,0 +1,2996 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="تادلة بيو - منتجات مغربية طبيعية وأصيلة من منطقة تادلة. زيت زيتون، زبدة تقليدية، ومنتجات طبيعية 100٪."
+    />
+    <meta
+      property="og:title"
+      content="تادلة بيو - منتجات مغربية طبيعية وأصيلة"
+    />
+    <meta
+      property="og:description"
+      content="اكتشفوا منتجات 100٪ طبيعية من قلب منطقة قصبة تادلة "
+    />
+    <meta property="og:image" content="assets/images/zit-baldia.png" />
+
+    <link rel="canonical" href="https://tadlabio-site.vercel.app" />
+    <meta property="og:url" content="https://tadlabio-site.vercel.app" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
+
+    <title>تادلة بيو - منتجات مغربية طبيعية وأصيلة</title>
+    <style>
+      /* CSS Variables */
+      :root {
+        --color-olive: #6b8e23;
+        --color-olive-light: #8fbc8f;
+        --color-olive-dark: #556b2f;
+        --color-terracotta: #e2725b;
+        --color-terracotta-light: #f4a460;
+        --color-sand: #f5deb3;
+        --color-sand-light: #faf0e6;
+        --color-off-white: #fffdf5;
+        --color-text: #2f4f4f;
+        --color-text-light: #708090;
+        --color-border: #e8e8e8;
+        --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        --radius: 8px;
+        --transition: all 0.3s ease;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+        line-height: 1.6;
+        color: var(--color-text);
+        background-color: var(--color-off-white);
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      h4 {
+        font-size: 1.25rem;
+      }
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+        h2 {
+          font-size: 1.75rem;
+        }
+        h3 {
+          font-size: 1.25rem;
+        }
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 24px;
+        border: none;
+        border-radius: var(--radius);
+        font-weight: 500;
+        text-decoration: none;
+        cursor: pointer;
+        transition: var(--transition);
+        font-size: 1rem;
+        gap: 8px;
+      }
+      .btn-primary {
+        background: var(--color-olive);
+        color: white;
+      }
+      .btn-primary:hover {
+        background: var(--color-olive-dark);
+        transform: translateY(-2px);
+      }
+      .btn-secondary {
+        background: transparent;
+        color: var(--color-olive);
+        border: 2px solid var(--color-olive);
+      }
+      .btn-secondary:hover {
+        background: var(--color-olive);
+        color: white;
+      }
+      .header {
+        background: rgba(255, 253, 245, 0.95);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        border-bottom: 1px solid var(--color-border);
+      }
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+      }
+      .logo img {
+        height: 40px;
+        width: auto;
+      }
+      .nav-list {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+      .nav-list a {
+        text-decoration: none;
+        color: var(--color-text);
+        font-weight: 500;
+        transition: var(--transition);
+      }
+      .nav-list a:hover {
+        color: var(--color-olive);
+      }
+      .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      .btn-contact {
+        background: var(--color-terracotta);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: var(--radius);
+        font-weight: 500;
+        cursor: pointer;
+        transition: var(--transition);
+      }
+      .btn-contact:hover {
+        background: var(--color-terracotta-light);
+      }
+      .cart-icon {
+        position: relative;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+      }
+      .cart-count {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background: var(--color-terracotta);
+        color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        font-size: 0.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .mobile-menu-btn {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+      }
+      .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-off-white);
+        z-index: 2000;
+        transform: translateX(-100%);
+        transition: var(--transition);
+      }
+      .mobile-menu.active {
+        transform: translateX(0);
+      }
+      .mobile-menu-header {
+        padding: 1rem;
+        border-bottom: 1px solid var(--color-border);
+        display: flex;
+        justify-content: flex-end;
+      }
+      .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+      }
+      .mobile-nav a {
+        padding: 1rem 0;
+        text-decoration: none;
+        color: var(--color-text);
+        font-size: 1.2rem;
+        border-bottom: 1px solid var(--color-border);
+        font-weight: 500;
+      }
+      .hero {
+        background: linear-gradient(
+          135deg,
+          var(--color-olive-light) 0%,
+          var(--color-olive) 100%
+        );
+        color: white;
+        padding: 120px 0 80px;
+        text-align: center;
+      }
+      .hero-title {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+      }
+      .hero-subtitle {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0.9;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .products {
+        padding: 80px 0;
+      }
+      .section-header {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+      .section-header h2 {
+        color: var(--color-olive-dark);
+      }
+      .filters {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+      }
+      .filter-btn {
+        padding: 8px 16px;
+        border: 2px solid var(--color-olive);
+        background: transparent;
+        color: var(--color-olive);
+        border-radius: 20px;
+        cursor: pointer;
+        transition: var(--transition);
+        font-weight: 500;
+      }
+      .filter-btn.active,
+      .filter-btn:hover {
+        background: var(--color-olive);
+        color: white;
+      }
+      .products-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 2rem;
+      }
+      .product-card {
+        background: white;
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+        cursor: pointer;
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-lg);
+      }
+      .product-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .product-info {
+        padding: 1.5rem;
+      }
+      .product-title {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: var(--color-text);
+      }
+      .product-price {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--color-olive);
+        margin-bottom: 0.5rem;
+      }
+      .product-weight {
+        color: var(--color-text-light);
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+      .product-actions {
+        display: flex;
+        gap: 0.5rem;
+      }
+      .btn-add-cart {
+        flex: 1;
+        background: var(--color-olive);
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: var(--radius);
+        cursor: pointer;
+        transition: var(--transition);
+        font-weight: 500;
+      }
+      .btn-add-cart:hover {
+        background: var(--color-olive-dark);
+      }
+      .btn-view-details {
+        background: transparent;
+        border: 1px solid var(--color-olive);
+        color: var(--color-olive);
+        padding: 10px;
+        border-radius: var(--radius);
+        cursor: pointer;
+        transition: var(--transition);
+      }
+      .btn-view-details:hover {
+        background: var(--color-olive);
+        color: white;
+      }
+      .cart-drawer {
+        position: fixed;
+        top: 0;
+        right: -400px;
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        background: white;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: 3000;
+        transition: var(--transition);
+        display: flex;
+        flex-direction: column;
+      }
+      .cart-drawer.active {
+        right: 0;
+      }
+      .cart-header {
+        padding: 1.5rem;
+        border-bottom: 1px solid var(--color-border);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .cart-content {
+        flex: 1;
+        overflow-y: auto;
+        padding: 1rem;
+      }
+      .cart-item {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--color-border);
+      }
+      .cart-item-image {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: var(--radius);
+      }
+      .cart-item-details {
+        flex: 1;
+      }
+      .cart-item-title {
+        font-weight: 500;
+        margin-bottom: 0.25rem;
+      }
+      .cart-item-price {
+        color: var(--color-olive);
+        font-weight: 600;
+      }
+      .cart-item-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+      }
+      .quantity-btn {
+        width: 30px;
+        height: 30px;
+        border: 1px solid var(--color-border);
+        background: white;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .cart-item-quantity {
+        min-width: 30px;
+        text-align: center;
+      }
+      .remove-btn {
+        background: none;
+        border: none;
+        color: var(--color-text-light);
+        cursor: pointer;
+        padding: 4px;
+        margin-left: auto;
+      }
+      .cart-footer {
+        padding: 1.5rem;
+        border-top: 1px solid var(--color-border);
+      }
+      .cart-totals {
+        margin-bottom: 1.5rem;
+      }
+      .total-line {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+      }
+      .grand-total {
+        font-weight: 600;
+        font-size: 1.1rem;
+        border-top: 1px solid var(--color-border);
+        padding-top: 0.5rem;
+        margin-top: 0.5rem;
+      }
+      .btn-checkout {
+        width: 100%;
+      }
+      .product-modal,
+      .checkout-modal,
+      .success-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 4000;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+      .product-modal.active,
+      .checkout-modal.active,
+      .success-modal.active {
+        display: flex;
+      }
+      .product-modal-content {
+        background: white;
+        border-radius: var(--radius);
+        max-width: 800px;
+        width: 100%;
+        max-height: 90vh;
+        overflow-y: auto;
+        position: relative;
+      }
+      .checkout-content,
+      .success-content {
+        background: white;
+        border-radius: var(--radius);
+        max-width: 500px;
+        width: 100%;
+        max-height: 90vh;
+        overflow-y: auto;
+      }
+      .success-content {
+        text-align: center;
+        padding: 2rem;
+      }
+      .success-icon {
+        font-size: 4rem;
+        color: var(--color-olive);
+        margin-bottom: 1rem;
+      }
+      .close-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1;
+      }
+      .product-modal-body {
+        padding: 2rem;
+      }
+      .product-detail {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+      .product-detail-image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: var(--radius);
+      }
+      .product-detail-info h2 {
+        color: var(--color-olive-dark);
+      }
+      .product-detail-price {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--color-olive);
+        margin: 1rem 0;
+      }
+      .product-detail-description {
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+      }
+      .product-detail-ingredients {
+        background: var(--color-sand-light);
+        padding: 1rem;
+        border-radius: var(--radius);
+        margin: 1.5rem 0;
+      }
+      .product-detail-ingredients h4 {
+        margin-bottom: 0.5rem;
+      }
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+      }
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius);
+        font-size: 1rem;
+        transition: var(--transition);
+      }
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: var(--color-olive);
+        box-shadow: 0 0 0 3px rgba(107, 142, 35, 0.1);
+      }
+      .order-summary {
+        background: var(--color-sand-light);
+        padding: 1.5rem;
+        border-radius: var(--radius);
+        margin: 1.5rem 0;
+      }
+      .about,
+      .reviews,
+      .newsletter,
+      .contact {
+        padding: 80px 0;
+      }
+      .about {
+        background: var(--color-sand-light);
+      }
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+      .feature {
+        text-align: center;
+        padding: 1.5rem;
+      }
+      .feature h3 {
+        color: var(--color-olive);
+        margin-bottom: 0.5rem;
+      }
+      .reviews-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+      .review-card {
+        background: white;
+        padding: 2rem;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        text-align: center;
+      }
+      .stars {
+        color: #ffd700;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+      .newsletter {
+        background: linear-gradient(
+          135deg,
+          var(--color-terracotta) 0%,
+          var(--color-terracotta-light) 100%
+        );
+        color: white;
+        text-align: center;
+      }
+      .newsletter-content h2 {
+        margin-bottom: 1rem;
+      }
+      .newsletter-form {
+        display: flex;
+        max-width: 400px;
+        margin: 2rem auto 0;
+        gap: 0.5rem;
+      }
+      .newsletter-form input {
+        flex: 1;
+        padding: 12px;
+        border: none;
+        border-radius: var(--radius);
+        font-size: 1rem;
+      }
+      .contact-content {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 2rem;
+        align-items: center;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .footer {
+        background: var(--color-text);
+        color: white;
+        padding: 3rem 0 1rem;
+      }
+      .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+      .footer-section h4 {
+        color: var(--color-sand);
+        margin-bottom: 1rem;
+      }
+      .footer-section a {
+        display: block;
+        color: var(--color-text-light);
+        text-decoration: none;
+        margin-bottom: 0.5rem;
+        transition: var(--transition);
+      }
+      .footer-section a:hover {
+        color: white;
+      }
+      .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 1rem;
+        text-align: center;
+        color: var(--color-text-light);
+      }
+      @media (max-width: 1024px) {
+        .container {
+          padding: 0 15px;
+        }
+        .product-detail {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 768px) {
+        .nav {
+          display: none;
+        }
+        .mobile-menu-btn {
+          display: block;
+        }
+        .btn-contact {
+          display: none;
+        }
+        .hero-actions {
+          flex-direction: column;
+          align-items: center;
+        }
+        .filters {
+          justify-content: flex-start;
+          overflow-x: auto;
+          padding-bottom: 0.5rem;
+        }
+        .cart-drawer {
+          max-width: 100%;
+        }
+        .contact-content {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+        .newsletter-form {
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 640px) {
+        .products-grid {
+          grid-template-columns: 1fr;
+        }
+        .features {
+          grid-template-columns: 1fr;
+        }
+        .reviews-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      .loading {
+        opacity: 0.6;
+        pointer-events: none;
+      }
+
+      /* Container */
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+
+      /* Typography */
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-weight: 600;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.75rem;
+      }
+      h3 {
+        font-size: 1.25rem;
+      }
+      h4 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        line-height: 1.6;
+      }
+
+      /* Buttons */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 24px;
+        border: none;
+        border-radius: var(--radius);
+        font-weight: 500;
+        text-decoration: none;
+        cursor: pointer;
+        transition: var(--transition);
+        font-size: 1rem;
+        gap: 8px;
+        min-height: 48px;
+        width: 100%;
+        max-width: 200px;
+      }
+
+      .btn-primary {
+        background: var(--color-olive);
+        color: white;
+      }
+
+      .btn-primary:hover,
+      .btn-primary:focus {
+        background: var(--color-olive-dark);
+        transform: translateY(-2px);
+      }
+
+      .btn-secondary {
+        background: transparent;
+        color: var(--color-olive);
+        border: 2px solid var(--color-olive);
+      }
+
+      .btn-secondary:hover,
+      .btn-secondary:focus {
+        background: var(--color-olive);
+        color: white;
+      }
+
+      /* Header - Mobile First - FIXED */
+      .header {
+        background: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        border-bottom: 1px solid var(--color-border);
+        box-shadow: var(--shadow);
+      }
+
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+        gap: 1rem;
+        min-height: 70px; /* Added: Ensure enough height for logo */
+      }
+
+      /* FIXED: Logo styling for SVG */
+      .logo {
+        display: flex;
+        align-items: center;
+        min-width: 140px; /* Added: Ensure minimum width */
+        flex-shrink: 0; /* Added: Prevent logo from shrinking */
+      }
+
+      .logo svg {
+        height: 40px;
+        width: auto;
+        display: block;
+      }
+
+      /* REMOVE or COMMENT OUT this old rule: 
+.logo img {
+  height: 35px;
+  width: auto;
+}
+*/
+
+      /* Hide desktop nav on mobile */
+      .nav {
+        display: none;
+      }
+
+      .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        flex-shrink: 0; /* Added: Prevent actions from shrinking */
+      }
+
+      .cart-icon {
+        position: relative;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .cart-count {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        background: var(--color-terracotta);
+        color: white;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        font-size: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+      }
+
+      .mobile-menu-btn {
+        display: flex;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        min-height: 44px;
+        min-width: 44px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Mobile Menu */
+      .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background: white;
+        z-index: 2000;
+        transform: translateX(100%);
+        transition: var(--transition);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .mobile-menu.active {
+        transform: translateX(0);
+        right: 0;
+      }
+
+      .mobile-menu-header {
+        padding: 1rem;
+        border-bottom: 1px solid var(--color-border);
+        display: flex;
+        justify-content: flex-start;
+        background: white;
+      }
+
+      .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        flex: 1;
+      }
+
+      .mobile-nav a {
+        padding: 1rem 0;
+        text-decoration: none;
+        color: var(--color-text);
+        font-size: 1.1rem;
+        border-bottom: 1px solid var(--color-border);
+        font-weight: 500;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(
+          135deg,
+          var(--color-olive-light) 0%,
+          var(--color-olive) 100%
+        );
+        color: white;
+        padding: 100px 0 60px;
+        text-align: center;
+        margin-top: 70px;
+      }
+
+      .hero-title {
+        font-size: 2.25rem;
+        margin-bottom: 1rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+        opacity: 0.95;
+        line-height: 1.6;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+        max-width: 250px;
+      }
+
+      /* Products Section */
+      .products {
+        padding: 60px 0;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .section-header h2 {
+        color: var(--color-olive-dark);
+        margin-bottom: 0.5rem;
+      }
+
+      .section-header p {
+        color: var(--color-text-light);
+        font-size: 1.1rem;
+      }
+
+      .filters {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+        overflow-x: auto;
+        padding: 0.5rem 0;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .filter-btn {
+        padding: 10px 16px;
+        border: 2px solid var(--color-olive);
+        background: transparent;
+        color: var(--color-olive);
+        border-radius: 20px;
+        cursor: pointer;
+        transition: var(--transition);
+        font-weight: 500;
+        font-size: 0.9rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+
+      .filter-btn.active,
+      .filter-btn:active {
+        background: var(--color-olive);
+        color: white;
+      }
+
+      .products-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .product-card {
+        background: white;
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+      }
+
+      .product-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .product-info {
+        padding: 1.25rem;
+      }
+
+      .product-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        color: var(--color-text);
+      }
+
+      .product-price {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--color-olive);
+        margin-bottom: 0.25rem;
+      }
+
+      .product-weight {
+        color: var(--color-text-light);
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .product-desc {
+        color: var(--color-text-light);
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+      }
+
+      .product-actions {
+        display: flex;
+        gap: 0.5rem;
+      }
+
+      .btn-add-cart {
+        flex: 2;
+        background: var(--color-olive);
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: var(--radius);
+        cursor: pointer;
+        transition: var(--transition);
+        font-weight: 500;
+        font-size: 0.95rem;
+      }
+
+      .btn-view-details {
+        flex: 1;
+        background: transparent;
+        border: 1px solid var(--color-olive);
+        color: var(--color-olive);
+        padding: 12px;
+        border-radius: var(--radius);
+        cursor: pointer;
+        transition: var(--transition);
+        font-size: 0.95rem;
+      }
+
+      /* Cart System */
+      .cart-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 2999;
+        display: none;
+      }
+
+      .cart-overlay.active {
+        display: block;
+      }
+
+      .cart-drawer {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        background: white;
+        z-index: 3000;
+        transition: left 0.3s ease;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .cart-drawer.active {
+        left: 0;
+      }
+
+      .cart-header {
+        padding: 1.25rem;
+        border-bottom: 1px solid var(--color-border);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+      }
+
+      .cart-content {
+        flex: 1;
+        overflow-y: auto;
+        padding: 1rem;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .cart-item {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .cart-item-image {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: var(--radius);
+        flex-shrink: 0;
+      }
+
+      .cart-item-details {
+        flex: 1;
+      }
+
+      .cart-item-title {
+        font-weight: 500;
+        margin-bottom: 0.25rem;
+        font-size: 0.95rem;
+      }
+
+      .cart-item-price {
+        color: var(--color-olive);
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      .cart-item-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .quantity-btn {
+        width: 32px;
+        height: 32px;
+        border: 1px solid var(--color-border);
+        background: white;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+      }
+
+      .cart-item-quantity {
+        min-width: 30px;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      .remove-btn {
+        background: none;
+        border: none;
+        color: var(--color-text-light);
+        cursor: pointer;
+        padding: 4px;
+        margin-right: auto;
+        font-size: 1.2rem;
+      }
+
+      .cart-footer {
+        padding: 1.25rem;
+        border-top: 1px solid var(--color-border);
+        background: white;
+      }
+
+      .cart-totals {
+        margin-bottom: 1.25rem;
+      }
+
+      .total-line {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+        padding: 0.25rem 0;
+      }
+
+      .grand-total {
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: var(--color-olive-dark);
+        border-top: 2px solid var(--color-olive-light);
+        padding-top: 1rem;
+        margin-top: 0.5rem;
+      }
+
+      .cart-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .empty-cart {
+        text-align: center;
+        color: var(--color-text-light);
+        padding: 3rem 1rem;
+        font-style: italic;
+      }
+
+      /* About Section */
+      .about {
+        padding: 60px 0;
+        background: var(--color-sand-light);
+      }
+
+      .about-text {
+        text-align: center;
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .feature {
+        text-align: center;
+        padding: 1.5rem;
+      }
+
+      .feature h3 {
+        color: var(--color-olive);
+        margin-bottom: 0.5rem;
+      }
+
+      /* Reviews */
+      .reviews {
+        padding: 60px 0;
+      }
+
+      .reviews-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .review-card {
+        background: white;
+        padding: 1.5rem;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        text-align: center;
+      }
+
+      .stars {
+        color: #ffd700;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+      }
+
+      /* Contact */
+      .contact {
+        padding: 60px 0;
+      }
+
+      .contact-content {
+        text-align: center;
+      }
+
+      .contact-info {
+        margin-bottom: 2rem;
+      }
+
+      .contact-info h3 {
+        color: var(--color-olive-dark);
+        margin-bottom: 1rem;
+      }
+
+      .contact-info p {
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+      }
+
+      /* Footer */
+      .footer {
+        background: var(--color-text);
+        color: white;
+        padding: 3rem 0 1rem;
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .footer-section h4 {
+        color: var(--color-sand);
+        margin-bottom: 1rem;
+      }
+
+      .footer-section a {
+        display: block;
+        color: var(--color-text-light);
+        text-decoration: none;
+        margin-bottom: 0.5rem;
+        transition: var(--transition);
+      }
+
+      .footer-section a:hover {
+        color: white;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 1rem;
+        text-align: center;
+        color: var(--color-text-light);
+      }
+
+      /* Modal System */
+      .product-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 4000;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      .product-modal.active {
+        display: flex;
+      }
+
+      .product-modal-content {
+        background: white;
+        border-radius: var(--radius);
+        width: 100%;
+        max-width: 500px;
+        max-height: 90vh;
+        overflow-y: auto;
+        position: relative;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .close-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        z-index: 1;
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Tablet Styles */
+      @media (min-width: 768px) {
+        .container {
+          padding: 0 24px;
+        }
+
+        h1 {
+          font-size: 2.5rem;
+        }
+        h2 {
+          font-size: 2rem;
+        }
+
+        .hero {
+          padding: 120px 0 80px;
+          margin-top: 80px;
+        }
+
+        .hero-title {
+          font-size: 3rem;
+        }
+
+        .hero-actions {
+          flex-direction: row;
+          justify-content: center;
+        }
+
+        .hero-actions .btn {
+          width: auto;
+        }
+
+        .products-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2rem;
+        }
+
+        .features {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .reviews-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .footer-content {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        /* Show desktop nav, hide mobile menu button */
+        .nav {
+          display: block;
+          flex: 1;
+          margin: 0 2rem;
+        }
+
+        .nav-list {
+          display: flex;
+          list-style: none;
+          gap: 2rem;
+          justify-content: center;
+        }
+
+        .nav-list a {
+          text-decoration: none;
+          color: var(--color-text);
+          font-weight: 500;
+          transition: var(--transition);
+        }
+
+        .nav-list a:hover {
+          color: var(--color-olive);
+        }
+
+        .mobile-menu-btn {
+          display: none;
+        }
+
+        /* FIXED: Better logo sizing on tablet */
+        .logo svg {
+          height: 42px;
+        }
+      }
+
+      /* Desktop Styles */
+      @media (min-width: 1024px) {
+        .products-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .hero-title {
+          font-size: 3.5rem;
+        }
+
+        .contact-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          text-align: right;
+        }
+
+        .contact-info {
+          margin-bottom: 0;
+        }
+
+        /* FIXED: Better logo on desktop */
+        .logo {
+          min-width: 160px;
+        }
+
+        .logo svg {
+          height: 45px;
+        }
+      }
+
+      /* Large Desktop */
+      @media (min-width: 1200px) {
+        .container {
+          padding: 0 32px;
+        }
+      }
+
+      /* Utility Classes */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      .loading {
+        opacity: 0.6;
+        pointer-events: none;
+      }
+
+      /* حل مشكلة تقطيع الصورة في الهاتف */
+      .products-grid img,
+      .product-card img,
+      .product-image {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+      }
+
+      /* باش تبقى الصور جميلة على الشاشات الكبيرة */
+      @media (min-width: 768px) {
+        .products-grid img,
+        .product-card img,
+        .product-image {
+          height: 220px !important;
+          object-fit: cover !important;
+        }
+      }
+      /* Critical CSS for mobile first render */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        overflow-x: hidden;
+      }
+      .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: white;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .hero {
+        margin-top: 80px;
+        padding: 40px 20px;
+        text-align: center;
+        background: linear-gradient(135deg, #8fbc8f 0%, #6b8e23 100%);
+        color: white;
+      }
+      /* FIXED Logo Styling */
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        min-width: 160px;
+        height: 50px;
+      }
+      .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .logo-english {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        line-height: 1;
+        margin-bottom: 2px;
+      }
+      .logo-tadla {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: #556b2f;
+        letter-spacing: 0.5px;
+      }
+      .logo-bio {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: #e2725b;
+      }
+      .logo-arabic {
+        font-family: "Segoe UI", sans-serif;
+        font-size: 11px;
+        color: #708090;
+        font-weight: 500;
+        letter-spacing: 0;
+      }
+      .logo-divider {
+        width: 2px;
+        height: 20px;
+        background-color: #f5deb3;
+        margin: 0 4px;
+      }
+      /* Header content */
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+        gap: 1rem;
+        min-height: 70px;
+      }
+      /* Icon Styling */
+      .cart-icon svg,
+      .mobile-menu-btn svg,
+      .close-btn svg {
+        display: block;
+        stroke: #2f4f4f;
+        transition: stroke 0.3s ease;
+      }
+      .cart-icon:hover svg,
+      .mobile-menu-btn:hover svg {
+        stroke: #6b8e23;
+      }
+      .close-btn:hover svg {
+        stroke: #e2725b;
+      }
+      /* Responsive logo */
+      @media (max-width: 768px) {
+        .logo {
+          min-width: 140px;
+          height: 45px;
+        }
+        .logo-tadla,
+        .logo-bio {
+          font-size: 20px;
+        }
+        .logo-arabic {
+          font-size: 10px;
+        }
+        .header-content {
+          min-height: 65px;
+          padding: 0.75rem 0;
+        }
+      }
+      @media (max-width: 480px) {
+        .logo {
+          min-width: 120px;
+          height: 40px;
+        }
+        .logo-tadla,
+        .logo-bio {
+          font-size: 18px;
+        }
+        .logo-arabic {
+          font-size: 9px;
+        }
+        .header-content {
+          min-height: 60px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <!-- FIXED Logo - HTML/CSS Version -->
+
+          <a href="./" class="logo">
+            <div class="logo-container">
+              <div class="logo-english">
+                <span class="logo-tadla">BIO</span>
+                <span class="logo-divider"></span>
+                <span class="logo-bio">TADLA</span>
+              </div>
+              <span class="logo-arabic">تادلة بيو</span>
+            </div>
+          </a>
+
+          <nav class="nav" aria-label="التنقل الرئيسي">
+            <ul class="nav-list">
+              <li><a href="#home">الرئيسية</a></li>
+              <li><a href="#products">المنتجات</a></li>
+              <li><a href="#about">من نحن</a></li>
+              <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+          </nav>
+
+          <div class="header-actions">
+            <button
+              class="cart-icon"
+              aria-label="عربة التسوق"
+              onclick="toggleCart()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M1.5 1.5h2l1.5 8h7" />
+                <circle cx="6" cy="13" r="1" />
+                <circle cx="12" cy="13" r="1" />
+              </svg>
+              <span class="cart-count" id="cartCount">0</span>
+            </button>
+            <button
+              class="mobile-menu-btn"
+              aria-label="قائمة الجوال"
+              onclick="toggleMobileMenu()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M2 4h12M2 8h12M2 12h12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <button
+          class="close-btn"
+          onclick="toggleMobileMenu()"
+          aria-label="إغلاق القائمة"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M3 3l10 10M13 3L3 13" />
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="#home" onclick="toggleMobileMenu()">الرئيسية</a>
+        <a href="#products" onclick="toggleMobileMenu()">المنتجات</a>
+        <a href="#about" onclick="toggleMobileMenu()">من نحن</a>
+        <a href="#contact" onclick="toggleMobileMenu()">اتصل بنا</a>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">نكهة تادلة الأصيلة</h1>
+          <p class="hero-subtitle">
+            منتجات 100٪ طبيعية من قلب منطقة تادلة المغربية. جربوا النكهات
+            التقليدية الصافية المصنوعة بحكمة الأجيال.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" onclick="scrollToProducts()">
+              تسوق المنتجات
+            </button>
+            <button class="btn btn-secondary" onclick="sendOrderToWhatsApp()">
+              اطلب عبر واتساب
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="products">
+      <div class="container">
+        <div class="section-header">
+          <h2>منتجاتنا الطبيعية</h2>
+          <p>مصنوعة يدوياً بالعناية، طبيعية بالنقاء</p>
+        </div>
+
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">
+            جميع المنتجات
+          </button>
+          <button class="filter-btn" data-filter="organic">عضوي</button>
+          <button class="filter-btn" data-filter="oil">زيوت</button>
+          <button class="filter-btn" data-filter="dairy">ألبان</button>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+          <!-- Products will be loaded here -->
+          <div class="product-card" data-category="oil">
+            <img
+              src="/assets/images/zit-baldia.png"
+              alt="زيت الزيتون"
+              class="product-image"
+            />
+            <div class="product-info">
+              <h3 class="product-title">زيت الزيتون البكر الممتاز</h3>
+              <div class="product-price">120 درهم</div>
+              <div class="product-weight">لتر واحد</div>
+              <p class="product-desc">
+                زيت زيتون بكر ممتاز مستخلص من أشجار الزيتون في منطقة تادلة. 100%
+                طبيعي.
+              </p>
+              <div class="product-actions">
+                <button class="btn-add-cart" onclick="addToCart(1)">
+                  أضف إلى العربة
+                </button>
+                <button
+                  class="btn-view-details"
+                  onclick="viewProductDetails(1)"
+                >
+                  تفاصيل
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="dairy">
+            <img
+              src="/assets/images/zabda-baldia.png"
+              alt="زبدة محلية"
+              class="product-image"
+            />
+            <div class="product-info">
+              <h3 class="product-title">زبدة محلية طبيعية</h3>
+              <div class="product-price">80 درهم</div>
+              <div class="product-weight">500 جرام</div>
+              <p class="product-desc">
+                زبدة محلية مصنوعة يدوياً من حليب الأبقار التي ترعى في مراعي
+                تادلة.
+              </p>
+              <div class="product-actions">
+                <button class="btn-add-cart" onclick="addToCart(2)">
+                  أضف إلى العربة
+                </button>
+                <button
+                  class="btn-view-details"
+                  onclick="viewProductDetails(2)"
+                >
+                  تفاصيل
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="organic">
+            <img
+              src="/assets/images/asal-achab.png"
+              alt="عسل طبيعي"
+              class="product-image"
+            />
+            <div class="product-info">
+              <h3 class="product-title">عسل طبيعي 100%</h3>
+              <div class="product-price">150 درهم</div>
+              <div class="product-weight">كيلوغرام</div>
+              <p class="product-desc">
+                عسل طبيعي من نحل يتغذى على أزهار المنطقة، غني بالفيتامينات
+                والمعادن.
+              </p>
+              <div class="product-actions">
+                <button class="btn-add-cart" onclick="addToCart(3)">
+                  أضف إلى العربة
+                </button>
+                <button
+                  class="btn-view-details"
+                  onclick="viewProductDetails(3)"
+                >
+                  تفاصيل
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>متجذرون في التقاليد</h2>
+            <p>
+              لأجيال عديدة، زرعت عائلتنا في منطقة تادلة الأرض باستخدام طرق
+              مستدامة، محافظة على النكهات الأصيلة والفوائد الغذائية لمنتجاتنا
+              الطبيعية.
+            </p>
+            <div class="features">
+              <div class="feature">
+                <h3>100٪ طبيعي</h3>
+                <p>لا إضافات، لا مواد حافظة، فقط طبيعة نقية</p>
+              </div>
+              <div class="feature">
+                <h3>طرق تقليدية</h3>
+                <p>تقنيات موروثة عبر الأجيال</p>
+              </div>
+              <div class="feature">
+                <h3>مستدام</h3>
+                <p>زراعة وإنتاج واعيان بيئياً</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+      <div class="container">
+        <div class="section-header">
+          <h2>آراء عملائنا</h2>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"شكرا بزاف زيت زوينة ديال منطقة بني ملال كما تعودنا."</p>
+            <span>-فاطمة</span>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"زيت بمداق زيتون طبيعية كتحمق شكرا."</p>
+            <span>- أحمد</span>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"زيت حلوى زوينة الله يعطيك الصحة."</p>
+            <span>- سارة</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>اتصل بنا</h2>
+          <p>نحن سعداء بتواصلكم معنا</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>معلومات الاتصال</h3>
+            <p>📍حي النصر تجزئة المنزه رقم 21</p>
+            <p>📞0705675426</p>
+            <p>✉️ hananhotel06@gmail.com</p>
+          </div>
+          <button class="btn btn-primary" onclick="sendOrderToWhatsApp()">
+            راسلنا على واتساب
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <!-- Fixed Footer Logo -->
+            <div class="footer-logo">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    margin-bottom: 2px;
+                  "
+                >
+                  <span
+                    style="
+                      font-family: 'Inter', sans-serif;
+                      font-weight: 600;
+                      font-size: 18px;
+                      color: #f5deb3;
+                    "
+                    >BIO</span
+                  >
+                  <span
+                    style="width: 1px; height: 15px; background-color: #8fbc8f"
+                  ></span>
+                  <span
+                    style="
+                      font-family: 'Inter', sans-serif;
+                      font-weight: 600;
+                      font-size: 18px;
+                      color: #f5deb3;
+                    "
+                    >TADLA</span
+                  >
+                </div>
+                <span
+                  style="
+                    font-family: 'Segoe UI', sans-serif;
+                    font-size: 10px;
+                    color: #a9a9a9;
+                  "
+                  >تادلة بيو</span
+                >
+              </div>
+            </div>
+            <p>نقدم النكهات المغربية الأصيلة إلى مائدتك.</p>
+          </div>
+          <div class="footer-section">
+            <h4>روابط سريعة</h4>
+            <a href="#products">المنتجات</a>
+            <a href="#about">قصتنا</a>
+            <a href="#contact">اتصل بنا</a>
+          </div>
+          <div class="footer-section">
+            <h4>السياسات</h4>
+            <a href="#">الشحن والإرجاع</a>
+            <a href="#">سياسة الخصوصية</a>
+            <a href="#">شروط الخدمة</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 تادلة بيو. جميع الحقوق محفوظة.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer" id="cartDrawer">
+      <div class="cart-header">
+        <h3>🛒 طلبك</h3>
+        <button
+          class="close-btn"
+          onclick="toggleCart()"
+          aria-label="إغلاق العربة"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M3 3l10 10M13 3L3 13" />
+          </svg>
+        </button>
+      </div>
+      <div class="cart-content" id="cartContent">
+        <!-- Cart items will be loaded here -->
+        <div class="empty-cart">العربة فارغة</div>
+      </div>
+      <div class="cart-footer">
+        <div class="shipping-message" id="shippingMessage">
+          🚚 توصيل مجاني داخل قصبة تادلة. التوصيل خارج قصبة تادلة غير مجاني.
+        </div>
+        <div class="cart-totals">
+          <div class="total-line grand-total">
+            <span>المجموع الكلي:</span>
+            <span id="cartTotal">0 درهم</span>
+          </div>
+        </div>
+        <div class="cart-actions">
+          <button
+            class="btn btn-primary btn-whatsapp-order"
+            onclick="sendOrderToWhatsApp()"
+          >
+            📱 أرسل الطلب عبر واتساب
+          </button>
+          <button class="btn btn-secondary" onclick="toggleCart()">
+            متابعة التسوق
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div class="product-modal" id="productModal">
+      <div class="product-modal-content">
+        <button
+          class="close-btn"
+          onclick="closeProductModal()"
+          aria-label="إغلاق تفاصيل المنتج"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M3 3l10 10M13 3L3 13" />
+          </svg>
+        </button>
+        <div class="product-modal-body" id="productModalBody">
+          <!-- Product details will be loaded here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Basic JavaScript for functionality -->
+    <script>
+      // Mobile menu toggle
+      function toggleMobileMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.classList.toggle("active");
+        document.body.style.overflow = mobileMenu.classList.contains("active")
+          ? "hidden"
+          : "";
+      }
+
+      // Cart toggle
+      function toggleCart() {
+        const cartDrawer = document.getElementById("cartDrawer");
+        const cartOverlay = document.getElementById("cartOverlay");
+        cartDrawer.classList.toggle("active");
+        cartOverlay.classList.toggle("active");
+        document.body.style.overflow = cartDrawer.classList.contains("active")
+          ? "hidden"
+          : "";
+      }
+
+      // Scroll to products
+      function scrollToProducts() {
+        document
+          .getElementById("products")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+
+      // Basic cart functionality
+      let cart = [];
+
+      function addToCart(productId) {
+        // Simple cart functionality
+        const cartCount = document.getElementById("cartCount");
+        let count = parseInt(cartCount.textContent) || 0;
+        cartCount.textContent = count + 1;
+
+        // Show cart
+        toggleCart();
+      }
+
+      function sendOrderToWhatsApp() {
+        const phoneNumber = "212705675426";
+        const message = encodeURIComponent(
+          "مرحباً، أريد طلب منتجات من تادلة بيو"
+        );
+        window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+      }
+
+      // Initialize
+      document.addEventListener("DOMContentLoaded", function () {
+        // Close mobile menu when clicking links
+        document.querySelectorAll(".mobile-nav a").forEach((link) => {
+          link.addEventListener("click", toggleMobileMenu);
+        });
+
+        // Filter products
+        document.querySelectorAll(".filter-btn").forEach((button) => {
+          button.addEventListener("click", function () {
+            const filter = this.getAttribute("data-filter");
+
+            // Update active button
+            document.querySelectorAll(".filter-btn").forEach((btn) => {
+              btn.classList.remove("active");
+            });
+            this.classList.add("active");
+
+            // Filter products (basic implementation)
+            const products = document.querySelectorAll(".product-card");
+            products.forEach((product) => {
+              if (
+                filter === "all" ||
+                product.getAttribute("data-category") === filter
+              ) {
+                product.style.display = "block";
+              } else {
+                product.style.display = "none";
+              }
+            });
+          });
+        });
+      });
+
+      // Tadla Bio E-commerce Application
+      class TadlaBioStore {
+        constructor() {
+          this.products = [];
+          this.cart = this.loadCart();
+          this.filter = "all";
+          this.isCartOpen = false;
+          this.init();
+        }
+
+        async init() {
+          await this.loadProducts();
+          this.renderProducts();
+          this.updateCartCount();
+          this.setupEventListeners();
+        }
+
+        // Load products from JSON file
+        async loadProducts() {
+          try {
+            const response = await fetch("./data/products.json");
+            if (!response.ok) {
+              throw new Error("Failed to load products");
+            }
+            this.products = await response.json();
+            console.log("Products loaded:", this.products.length);
+          } catch (error) {
+            console.error("Error loading products:", error);
+            this.products = this.getSampleProducts();
+          }
+        }
+
+        getSampleProducts() {
+          return [
+            {
+              id: 1,
+              name: "زيت زيتون بكر ممتاز",
+              slug: "zit-baldia",
+              price_mad: 65,
+              weight: " لتر 1",
+              short_desc: "معصور على البارد من أول قطفة الزيتون",
+              long_desc:
+                "زيت زيتون بكر ممتاز عالي الجودة، مستخلص من أجود ثمار الزيتون المزروعة في أراضي قصبة تادلة المعروفة بتربتها الخصبة ومناخها الذي يمنح الزيتون مذاقًا ونكهة فريدة. يتم قطف الثمار بعناية خلال موسمها الطبيعي، ثم تُعصر على البارد للحفاظ على قيمتها الغذائية ورائحتها الأصلية دون أي إضافات أو مواد حافظة.",
+              ingredients: ["100% زيتون عضوي"],
+              is_organic: true,
+              category: "oil",
+              image: "/assets/images/zit-baldia.png",
+            },
+            {
+              id: 2,
+              name: "زبدة بلدية",
+              slug: "zabda-baldia",
+              price_mad: 120,
+              weight: " كيلو 1",
+              short_desc: "زبدة مغربية تقليدية مخضوضة يدوياً",
+              long_desc:
+                "زبدة بلدية طبيعية محضّرة بالطريقة التقليدية من حليب طازج من قصبة تادلة، تتميّز بنكهة قروية أصيلة وقوام كريمي غني. منتج طبيعي 100% دون أي مواد مضافة.",
+              ingredients: ["حليب بقر طازج", "ملح بحري"],
+              is_organic: false,
+              category: "dairy",
+              image: "/assets/images/zabda-baldia.png",
+            },
+            {
+              id: 3,
+              name: "سمن الحار",
+              slug: "smen-har",
+              price_mad: 150,
+              weight: " كيلو 1",
+              short_desc: "سمن الحار ",
+              long_desc:
+                "مصنوعة باستخدام الطرق التقليدية التي توارثتها الأجيال، زبدتنا الزبدة مخضوضة يدوياً من حليب البقر الطازج المغذى على العشب. تتميز بقوام كريمي غني ونكهة مميزة تعزز أي طبق.",
+              ingredients: ["حليب بقر طازج", "ملح بحري"],
+              is_organic: false,
+              category: "dairy",
+              image: "/assets/images/smen-har.png",
+            },
+            {
+              id: 4,
+              name: "عسل الليمون",
+              slug: "asal-laymon",
+              price_mad: 85,
+              weight: " كيلو 1",
+              short_desc: "عسل حر بالليمون",
+              long_desc:
+                "زيت الأركان النقي لدينا مستخلص باستخدام طرق العصر على البارد التقليدية من قبل تعاونيات النساء المحليات. هذا الزيت الذهبي غني بفيتامين E والأحماض الدهنية الأساسية، مناسب للاستخدام الطهي والعناية بالبشرة.",
+              ingredients: ["100% لوز أركان نقي"],
+              is_organic: true,
+              category: "oil",
+              image: "/assets/images/asal-laymon.png",
+            },
+            {
+              id: 5,
+              name: "عسل الخروب",
+              slug: "asal-kharob",
+              price_mad: 110,
+              weight: " كيلو 1",
+              short_desc: "عسل حر بالخروب",
+              long_desc:
+                "يزرع في سهول تادلة المشمسة، يتم حصاد تمر المجهول لدينا يدوياً عند ذروة النضج. هذه التمور الحلوة طبيعياً بنكهة الكراميل غنية بالألياف والبوتاسيوم والعناصر الغذائية الأساسية.",
+              ingredients: ["100% تمر طبيعي"],
+              is_organic: true,
+              category: "pantry",
+              image: "/assets/images/asal-kharob.png",
+            },
+            {
+              id: 6,
+              name: "عسل اعشاب",
+              slug: "asal-achab",
+              price_mad: 110,
+              weight: " كيلو 1",
+              short_desc: "عسل حر بالاعشاب",
+              long_desc:
+                "عسلنا الخام يحصد من خلايا النحل الموضوعة في المناظر الطبيعية المتنوعة للزهور في منطقة تادلة. هذا العسل غير المعالج يحتفظ بجميع إنزيماته الطبيعية ومضادات الأكسدة والملاحظات الزهرية الدقيقة.",
+              ingredients: ["100% عسل خام"],
+              is_organic: true,
+              category: "pantry",
+              image: "/assets/images/asal-achab.png",
+            },
+            {
+              id: 7,
+              name: "زيتون مرقد",
+              slug: "zayton-mra9ad",
+              price_mad: 35,
+              weight: "5 كيلو",
+              short_desc: "زيتون مرقد منزلي من منطقة تادلة",
+              long_desc:
+                "يزرع في التربة الغنية بالمعادن لبساتين عائلتنا، يتم تحميص هذا اللوز بشكل خفيف لتعزيز نكهته الطبيعية وقرمشته. غني بالبروتين والدهون الصحية وفيتامين E.",
+              ingredients: ["100% لوز طبيعي", "ملح بحري"],
+              is_organic: true,
+              category: "pantry",
+              image: "/assets/images/zayton-mra9ad.png",
+            },
+            {
+              id: 8,
+              name: "زيتون مرقد",
+              slug: "zayton-mra9add",
+              price_mad: 20,
+              weight: "2 كيلو",
+              short_desc: "زيتون مرقد منزلي من منطقة تادلة",
+              long_desc:
+                "يزرع في التربة الغنية بالمعادن لبساتين عائلتنا، يتم تحميص هذا اللوز بشكل خفيف لتعزيز نكهته الطبيعية وقرمشته. غني بالبروتين والدهون الصحية وفيتامين E.",
+              ingredients: ["100% لوز طبيعي", "ملح بحري"],
+              is_organic: true,
+              category: "pantry",
+              image: "/assets/images/zayton-mra9add.png",
+            },
+          ];
+        }
+
+        // Cart management
+        loadCart() {
+          try {
+            const cart = localStorage.getItem("tadla_bio_cart");
+            return cart ? JSON.parse(cart) : [];
+          } catch (error) {
+            console.error("Error loading cart:", error);
+            return [];
+          }
+        }
+
+        saveCart() {
+          try {
+            localStorage.setItem("tadla_bio_cart", JSON.stringify(this.cart));
+            this.updateCartCount();
+          } catch (error) {
+            console.error("Error saving cart:", error);
+          }
+        }
+
+        clearCart() {
+          this.cart = [];
+          this.saveCart();
+          this.renderCart();
+        }
+
+        addToCart(product, quantity = 1) {
+          const existingItem = this.cart.find((item) => item.id === product.id);
+
+          if (existingItem) {
+            existingItem.quantity += quantity;
+          } else {
+            this.cart.push({
+              id: product.id,
+              name: product.name,
+              price_mad: product.price_mad,
+              weight: product.weight,
+              image: product.image,
+              quantity: quantity,
+            });
+          }
+
+          this.saveCart();
+          this.renderCart();
+          this.showNotification(`تم إضافة ${product.name} إلى السلة`);
+        }
+
+        removeFromCart(productId) {
+          this.cart = this.cart.filter((item) => item.id !== productId);
+          this.saveCart();
+          this.renderCart();
+        }
+
+        updateQuantity(productId, change) {
+          const item = this.cart.find((item) => item.id === productId);
+          if (item) {
+            item.quantity += change;
+            if (item.quantity <= 0) {
+              this.removeFromCart(productId);
+            } else {
+              this.saveCart();
+              this.renderCart();
+            }
+          }
+        }
+
+        // WhatsApp Order Generation in Arabic
+        // WhatsApp Order Generation in Arabic - FIXED VERSION
+        generateWhatsAppOrderMessage() {
+          if (this.cart.length === 0) {
+            return "مرحباً! أنا مهتم/مهتمة بمنتجات تادلة بيو. هل يمكنكم إخباري بالمزيد؟";
+          }
+
+          const items = this.cart
+            .map(
+              (item) =>
+                `${item.quantity} × ${item.name} (${
+                  item.weight
+                }) = ${this.formatPrice(item.price_mad * item.quantity)}`
+            )
+            .join("\n");
+
+          const total = this.cart.reduce(
+            (sum, item) => sum + item.price_mad * item.quantity,
+            0
+          );
+
+          return `مرحباً، أود تقديم طلب من تادلة بيو 🫒
+
+🛒 *المنتجات المطلوبة:*
+${items}
+
+💰 *المجموع الكلي:* ${this.formatPrice(total)}
+
+
+
+🚚 *ملاحظة:* التوصيل مجاني داخل قصبة تادلة. خارج المنطقة تختلف الرسوم حسب المسافة.
+
+شكراً لكم! 😊`;
+        }
+
+        sendOrderToWhatsApp() {
+          if (this.cart.length === 0) {
+            // If cart is empty, send inquiry message
+            const inquiryMessage = encodeURIComponent(
+              "مرحباً، أنا مهتم بمنتجات تادلة بيو. هل يمكنكم إرسال قائمة المنتجات والأسعار؟"
+            );
+            const phoneNumber = "212705675426";
+            window.open(
+              `https://wa.me/${phoneNumber}?text=${inquiryMessage}`,
+              "_blank"
+            );
+            this.showNotification("جاري فتح واتساب للاستفسار...");
+            return;
+          }
+
+          const message = this.generateWhatsAppOrderMessage();
+          const phoneNumber = "212705675426";
+
+          const encodedMessage = encodeURIComponent(message);
+          const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+          window.open(whatsappUrl, "_blank");
+          this.showNotification("جاري فتح واتساب مع طلبك...");
+          this.hideCart();
+        }
+
+        // Rendering methods
+        renderProducts() {
+          const grid = document.getElementById("productsGrid");
+          if (!grid) return;
+
+          grid.innerHTML =
+            '<div class="loading" style="grid-column: 1/-1; text-align: center; padding: 2rem;">جاري تحميل المنتجات...</div>';
+
+          setTimeout(() => {
+            const filteredProducts =
+              this.filter === "all"
+                ? this.products
+                : this.products.filter((product) =>
+                    this.filter === "organic"
+                      ? product.is_organic
+                      : this.filter === "oil"
+                      ? product.category === "oil"
+                      : this.filter === "dairy"
+                      ? product.category === "dairy"
+                      : true
+                  );
+
+            if (filteredProducts.length === 0) {
+              grid.innerHTML =
+                '<div class="empty-state" style="grid-column: 1/-1; text-align: center; padding: 3rem; color: var(--color-text-light);">لم يتم العثور على منتجات تطابق معاييرك.</div>';
+              return;
+            }
+
+            grid.innerHTML = filteredProducts
+              .map(
+                (product) => `
+                <div class="product-card" data-product-id="${product.id}">
+                    <img src="${product.image}" alt="${
+                  product.name
+                }" class="product-image" loading="lazy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBmaWxsPSIjRjVGREIzIi8+CjxwYXRoIGQ9Ik0xMDAgMTUwSDE1ME0yNTAgMTUwSDMwME0xNzUgMTAwVjIwME0yMjUgMTAwVjIwMCIgc3Ryb2tlPSIjNkI4RTIzIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+'">
+                    <div class="product-info">
+                        <h3 class="product-title">${product.name}</h3>
+                        <div class="product-price">${this.formatPrice(
+                          product.price_mad
+                        )}</div>
+                        <div class="product-weight">${product.weight}</div>
+                        <p class="product-desc">${product.short_desc}</p>
+                        <div class="product-actions">
+                            <button class="btn-add-cart" onclick="store.addToCart(${this.escapeProduct(
+                              product
+                            )})">
+                                أضف إلى السلة
+                            </button>
+                            <button class="btn-view-details" onclick="store.showProductDetail(${
+                              product.id
+                            })">
+                                التفاصيل
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `
+              )
+              .join("");
+          }, 100);
+        }
+
+        renderCart() {
+          const cartContent = document.getElementById("cartContent");
+          if (!cartContent) return;
+
+          if (this.cart.length === 0) {
+            cartContent.innerHTML = `
+                <div class="empty-cart">
+                    🛒 سلة التسوق فارغة
+                    <button class="btn btn-primary" onclick="store.hideCart(); scrollToProducts();" style="margin-top: 1rem;">
+                        ابدأ التسوق
+                    </button>
+                </div>
+            `;
+            this.updateTotals();
+            return;
+          }
+
+          cartContent.innerHTML = this.cart
+            .map(
+              (item) => `
+            <div class="cart-item">
+                <img src="${item.image}" alt="${
+                item.name
+              }" class="cart-item-image" loading="lazy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjRjVGREIzIi8+CjxwYXRoIGQ9Ik0zMCA0MEg1ME00MCAzMFY1MCIgc3Ryb2tlPSIjNkI4RTIzIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+'">
+                <div class="cart-item-details">
+                    <div class="cart-item-title">${item.name}</div>
+                    <div class="cart-item-price">${this.formatPrice(
+                      item.price_mad
+                    )}</div>
+                    <div class="cart-item-actions">
+                        <button class="quantity-btn" onclick="store.updateQuantity(${
+                          item.id
+                        }, -1)">-</button>
+                        <span class="cart-item-quantity">${item.quantity}</span>
+                        <button class="quantity-btn" onclick="store.updateQuantity(${
+                          item.id
+                        }, 1)">+</button>
+                        <button class="remove-btn" onclick="store.removeFromCart(${
+                          item.id
+                        })">
+                            ×
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `
+            )
+            .join("");
+
+          this.updateTotals();
+        }
+
+        updateTotals() {
+          const total = this.cart.reduce(
+            (sum, item) => sum + item.price_mad * item.quantity,
+            0
+          );
+          document.getElementById("cartTotal").textContent =
+            this.formatPrice(total);
+          this.updateShippingMessage(total);
+        }
+
+        updateShippingMessage(total) {
+          const shippingMessage = document.getElementById("shippingMessage");
+          if (!shippingMessage) return;
+
+          if (total === 0) {
+            shippingMessage.style.display = "none";
+          } else {
+            shippingMessage.style.display = "block";
+          }
+        }
+
+        updateCartCount() {
+          const countElement = document.getElementById("cartCount");
+          if (countElement) {
+            const totalItems = this.cart.reduce(
+              (sum, item) => sum + item.quantity,
+              0
+            );
+            countElement.textContent = totalItems;
+            countElement.style.display = totalItems > 0 ? "flex" : "none";
+          }
+        }
+
+        showProductDetail(productId) {
+          const product = this.products.find((p) => p.id === productId);
+          if (!product) return;
+
+          const modalBody = document.getElementById("productModalBody");
+          modalBody.innerHTML = `
+            <div class="product-detail">
+                <img src="${product.image}" alt="${
+            product.name
+          }" class="product-detail-image" loading="lazy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjVGREIzIi8+CjxwYXRoIGQ9Ik0xMDAgMTUwSDE1ME0yNTAgMTUwSDMwME0xNzUgMTAwVjIwME0yMjUgMTAwVjIwMCIgc3Ryb2tlPSIjNkI4RTIzIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+'">
+                <div class="product-detail-info">
+                    <h2>${product.name}</h2>
+                    <div class="product-detail-price">${this.formatPrice(
+                      product.price_mad
+                    )}</div>
+                    <div class="product-weight">${product.weight}</div>
+                    <p class="product-detail-description">${
+                      product.long_desc
+                    }</p>
+                    
+                    ${
+                      product.ingredients && product.ingredients.length
+                        ? `
+                        <div class="product-detail-ingredients">
+                            <h4>المكونات</h4>
+                            <p>${product.ingredients.join(", ")}</p>
+                        </div>
+                    `
+                        : ""
+                    }
+                    
+                    ${
+                      product.is_organic
+                        ? '<div class="organic-badge">🌿 عضوي معتمد</div>'
+                        : ""
+                    }
+                    
+                    <div class="product-actions" style="margin-top: 2rem;">
+                        <button class="btn btn-primary" onclick="store.addToCart(${this.escapeProduct(
+                          product
+                        )})">
+                            أضف إلى السلة
+                        </button>
+                        <button class="btn btn-secondary" onclick="store.closeProductModal()">
+                            متابعة التسوق
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `;
+
+          this.showModal("productModal");
+        }
+
+        closeProductModal() {
+          this.hideModal("productModal");
+        }
+
+        // Modal and cart management
+        showModal(modalId) {
+          const modal = document.getElementById(modalId);
+          if (modal) {
+            modal.classList.add("active");
+            document.body.style.overflow = "hidden";
+          }
+        }
+
+        hideModal(modalId) {
+          const modal = document.getElementById(modalId);
+          if (modal) {
+            modal.classList.remove("active");
+            document.body.style.overflow = "auto";
+          }
+        }
+
+        showCart() {
+          const cart = document.getElementById("cartDrawer");
+          const overlay = document.getElementById("cartOverlay");
+
+          if (cart && overlay) {
+            cart.classList.add("active");
+            overlay.classList.add("active");
+            document.body.style.overflow = "hidden";
+            this.isCartOpen = true;
+            this.renderCart();
+          }
+        }
+
+        hideCart() {
+          const cart = document.getElementById("cartDrawer");
+          const overlay = document.getElementById("cartOverlay");
+
+          if (cart && overlay) {
+            cart.classList.remove("active");
+            overlay.classList.remove("active");
+            document.body.style.overflow = "auto";
+            this.isCartOpen = false;
+          }
+        }
+
+        toggleCart() {
+          if (this.isCartOpen) {
+            this.hideCart();
+          } else {
+            this.showCart();
+          }
+        }
+
+        showMobileMenu() {
+          const menu = document.getElementById("mobileMenu");
+          if (menu) {
+            menu.classList.add("active");
+            document.body.style.overflow = "hidden";
+          }
+        }
+
+        hideMobileMenu() {
+          const menu = document.getElementById("mobileMenu");
+          if (menu) {
+            menu.classList.remove("active");
+            document.body.style.overflow = "auto";
+          }
+        }
+
+        toggleMobileMenu() {
+          const menu = document.getElementById("mobileMenu");
+          if (menu.classList.contains("active")) {
+            this.hideMobileMenu();
+          } else {
+            this.showMobileMenu();
+          }
+        }
+
+        // Utilities
+        formatPrice(price) {
+          return new Intl.NumberFormat("fr-MA", {
+            style: "currency",
+            currency: "MAD",
+          }).format(price);
+        }
+
+        escapeProduct(product) {
+          const safeProduct = {
+            id: product.id,
+            name: product.name,
+            price_mad: product.price_mad,
+            weight: product.weight,
+            image: product.image,
+          };
+          return JSON.stringify(safeProduct).replace(/"/g, "&quot;");
+        }
+
+        showNotification(message) {
+          const existingNotification = document.querySelector(".notification");
+          if (existingNotification) {
+            existingNotification.remove();
+          }
+
+          const notification = document.createElement("div");
+          notification.className = "notification";
+          notification.style.cssText = `
+            position: fixed;
+            top: 100px;
+            left: 20px;
+            background: var(--color-olive);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            z-index: 5000;
+            transform: translateX(-400px);
+            transition: transform 0.3s ease;
+            max-width: calc(100vw - 40px);
+        `;
+          notification.textContent = message;
+          document.body.appendChild(notification);
+
+          setTimeout(
+            () => (notification.style.transform = "translateX(0)"),
+            100
+          );
+
+          setTimeout(() => {
+            notification.style.transform = "translateX(-400px)";
+            setTimeout(() => {
+              if (notification.parentNode) {
+                notification.remove();
+              }
+            }, 300);
+          }, 3000);
+        }
+
+        // Event listeners
+        setupEventListeners() {
+          // Filter buttons
+          document.querySelectorAll(".filter-btn").forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+              document
+                .querySelectorAll(".filter-btn")
+                .forEach((b) => b.classList.remove("active"));
+              e.target.classList.add("active");
+              this.filter = e.target.dataset.filter;
+              this.renderProducts();
+            });
+          });
+
+          // Cart overlay click
+          const cartOverlay = document.getElementById("cartOverlay");
+          if (cartOverlay) {
+            cartOverlay.addEventListener("click", () => {
+              this.hideCart();
+            });
+          }
+
+          // Escape key to close modals
+          document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+              this.hideCart();
+              this.hideMobileMenu();
+              this.hideModal("productModal");
+            }
+          });
+
+          // Close modals on backdrop click
+          document.querySelectorAll(".product-modal").forEach((modal) => {
+            modal.addEventListener("click", (e) => {
+              if (e.target === modal) {
+                this.hideModal(modal.id);
+              }
+            });
+          });
+        }
+      }
+
+      // Global functions
+      function toggleCart() {
+        store.toggleCart();
+      }
+
+      function toggleMobileMenu() {
+        store.toggleMobileMenu();
+      }
+
+      function scrollToProducts() {
+        document.getElementById("products").scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+
+      function sendOrderToWhatsApp() {
+        store.sendOrderToWhatsApp();
+      }
+
+      // Initialize store
+      let store;
+      document.addEventListener("DOMContentLoaded", () => {
+        store = new TadlaBioStore();
+      });
+    </script>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
