@@ -36,7 +36,7 @@ class TadlaBioStore {
         id: 1,
         name: "زيت زيتون بكر ممتاز",
         slug: "zit-baldia",
-        price_mad: 65,
+        price_mad: 50,
         weight: " لتر 1",
         short_desc: "معصور على البارد من أول قطفة الزيتون",
         long_desc:
@@ -675,6 +675,7 @@ let store;
 document.addEventListener("DOMContentLoaded", () => {
   store = new TadlaBioStore();
 });
+
 
 
 
